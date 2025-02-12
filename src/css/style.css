@@ -1,11 +1,23 @@
-@media screen and (width >= 320px) {
-	#some-id {
-		color: red;
-	}
+* {
+	box-sizing: border-box;
 }
 
-@media screen and (width >= 500px) {
-	#some-id {
-		color: red;
-	}
+body {
+	margin: 0;
+}
+
+.navigation {
+	background-color: #FBF0D8;
+	display: flex;
+	justify-content: space-between;
+	padding: 10px 20px 10px 20px;
+}
+
+.content-container {
+	padding: 20px;
+	max-width: 1280;
+}
+
+h1 {
+	font-family: "Cormorant Garamond", serif;
 }
