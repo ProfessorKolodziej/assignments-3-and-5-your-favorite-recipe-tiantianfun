@@ -38,13 +38,6 @@ h2 {
 	font-size: 27px;
 }
 
-h3 {
-	font-family: "Cormorant Garamond", serif;
-	font-weight: 700;
-	font-style: normal;
-	font-size: 23px;
-}
-
 p,
 li,
 ul {
@@ -54,17 +47,25 @@ ul {
 	font-variation-settings:
 		"wdth" 100,
 		"YTLC" 500;
-	font-size: 20px;
+	font-size: 15px;
 }
 
 img {
 	max-width: 100%;
 }
 
+.highlight {
+	background-color: #FBF0D8;
+	margin-left: -20px;
+	margin-right: -20px;
+	padding: 10px;
+	font-size: 14px;
+}
+
 .full-recipe {
 	border: 2px solid #CF9F35;
 	width: 290px;
-	height: 2200px;
+	height: 1600px;
 }
 
 .recipe-title {
@@ -75,4 +76,18 @@ img {
 .recipe-author {
 	background-color: #FBF0D8;
 	padding: 0px;
+	text-align: center;
+}
+
+.recipe-subhead {
+	font-family: "Cormorant Garamond", serif;
+	font-weight: 700;
+	font-style: normal;
+	font-size: 23px;
+}
+
+.recipe-content {
+	padding: 10px;
+	margin: 10px;
+	list-style-position: inside;
 }
