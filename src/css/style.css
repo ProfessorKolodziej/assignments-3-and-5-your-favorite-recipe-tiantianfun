@@ -14,8 +14,26 @@ body {
 	background-color: #FBF0D8;
 	display: flex;
 	justify-content: space-between;
-	padding: 10px 20px 10px 20px;
+	align-items: center;
+	padding: 15px 40px;
 	margin: -20px;
+	width: calc(100%+40px)
+}
+
+.logo {
+	height: 60px;
+}
+
+.nav-controls {
+	display: flex;
+	align-items: center;
+	gap: 20px;
+}
+
+.nav-icon,
+.nav-bar {
+	height: 24px;
+	cursor: pointer;
 }
 
 h1,
@@ -42,12 +60,20 @@ p,
 li,
 ul {
 	font-family: "Nunito Sans", serif;
-	font-weight: <weight>;
+	font-weight: 300;
 	font-style: normal;
 	font-variation-settings:
 		"wdth" 100,
 		"YTLC" 500;
+	font-size: 17px;
+}
+
+.jump {
+	font-family: "Nunito Sans", serif;
+	font-weight: 400;
+	font-style: italic;
 	font-size: 15px;
+
 }
 
 img {
@@ -62,10 +88,16 @@ img {
 	font-size: 14px;
 }
 
+b {
+	font-weight: 600;
+}
+
 .full-recipe {
 	border: 2px solid #CF9F35;
 	width: 290px;
-	height: 1600px;
+	overflow: auto;
+	margin-left: auto;
+	margin-right: auto;
 }
 
 .recipe-title {
@@ -90,4 +122,57 @@ img {
 	padding: 10px;
 	margin: 10px;
 	list-style-position: inside;
+}
+
+.per-serving-text {
+	font-family: "Cormorant Garamond", serif;
+	font-weight: 400;
+	font-style: normal;
+	font-size: 15px;
+}
+
+@media (min-width:768px) {
+	.logo {
+		height: 80px;
+	}
+
+	h1,
+	h2,
+	h3 {
+		font-family: "Cormorant Garamond", serif;
+		padding: 10px;
+	}
+
+	h1 {
+		font-weight: 700;
+		font-style: normal;
+		font-size: 45px;
+	}
+
+	h2 {
+		font-family: "Cormorant Garamond", serif;
+		font-weight: 600;
+		font-style: normal;
+		font-size: 35px;
+	}
+
+	p,
+	li,
+	ul {
+		font-family: "Nunito Sans", serif;
+		font-weight: 400;
+		font-style: normal;
+		font-variation-settings:
+			"wdth" 100,
+			"YTLC" 500;
+		font-size: 22px;
+	}
+
+	.jump {
+		font-family: "Nunito Sans", serif;
+		font-weight: 400;
+		font-style: italic;
+		font-size: 15px;
+
+	}
 }
