@@ -51,7 +51,6 @@ h1 {
 }
 
 h2 {
-	font-family: "Cormorant Garamond", serif;
 	font-weight: 600;
 	font-style: normal;
 	font-size: 27px;
@@ -111,6 +110,7 @@ b {
 	background-color: #FBF0D8;
 	padding: 0px;
 	text-align: center;
+	margin-top: -25px;
 }
 
 .recipe-subhead {
@@ -120,13 +120,16 @@ b {
 	font-size: 23px;
 }
 
-.recipe-content {
+.full-recipe-body {
 	padding: 10px;
 	margin: 10px;
-	list-style-position: inside;
 }
 
-.per-serving-text {
+.recipe-serving {
+	text-align: center;
+}
+
+.nutrition-serving {
 	font-family: "Cormorant Garamond", serif;
 	font-weight: 400;
 	font-style: normal;
@@ -153,13 +156,11 @@ b {
 	}
 
 	h1 {
-		font-weight: 700;
 		font-size: 45px;
 		text-align: center;
 	}
 
 	h2 {
-		font-weight: 600;
 		font-size: 35px;
 		text-align: center;
 	}
@@ -198,8 +199,26 @@ b {
 		margin-right: auto;
 	}
 
+	.recipe-title {
+		font-size: 40px;
+	}
+
 	.recipe-author {
-		margin-top: -25px;
+		margin-top: -40px;
+	}
+
+	.full-recipe-body {
+		display: grid;
+		grid-template-columns: 1fr 1fr;
+		padding: 10px;
+		margin: 10px;
+		list-style-position: inside;
+		gap: 5px;
+	}
+
+	.recipe-time {
+		padding: 30px;
+		margin: 0;
 	}
 
 	.recipe-subhead {
@@ -207,18 +226,75 @@ b {
 		text-align: center;
 	}
 
+	recipe-serving,
 	.recipe-content {
-		padding: 10px;
-		margin: 10px;
-		list-style-position: inside;
+		line-height: 1.5;
+		margin-bottom: 10px;
 	}
 
-	.per-serving-text {
-		font-family: "Cormorant Garamond", serif;
-		font-weight: 400;
-		font-style: normal;
-		font-size: 15px;
+	.recipe-content li {
+		margin-bottom: 5px;
 	}
 
+	.nutrition-serving {
+		font-size: 20px;
+	}
+
+}
+
+@media (min-width:1024px) {
+	.logo {
+		height: 120px;
+	}
+
+	.open-para {
+		max-width: 1000px;
+		margin: 0 auto;
+		padding: 50px;
+		display: grid;
+		grid-template-columns: 1fr 1fr;
+		max-width: 1200px;
+		gap: 40px;
+		align-items: center;
+	}
+
+	.body-text {
+		max-width: 1000px;
+		margin: 0 auto;
+		padding: 0 20px;
+	}
+
+	.intro-text,
+	h1,
+	.jump {
+		text-align: left;
+	}
+
+	.intro-text {
+		order: 2;
+	}
+
+	.jump {
+		font-size: 20px;
+	}
+
+	h1 {
+		font-size: 75px;
+	}
+
+	h2 {
+		font-size: 40px;
+	}
+
+	p,
+	li,
+	ul {
+		font-size: 20px;
+	}
+
+	.highlight {
+		padding: 20px;
+		font-size: 20px;
+	}
 
 }
