@@ -141,7 +141,6 @@ b {
 	height: 80px;
 	width: 100%;
 	margin: 40px 0 0 0;
-	width: 100;
 }
 
 @media (min-width:768px) {
@@ -240,6 +239,10 @@ b {
 		font-size: 20px;
 	}
 
+	.footer {
+		height: 100px;
+	}
+
 }
 
 @media (min-width:1024px) {
@@ -292,9 +295,49 @@ b {
 		font-size: 20px;
 	}
 
+	.body-text-seasoning {
+		display: flex;
+		flex-direction: row;
+		gap: 30px;
+		max-width: 900px;
+		margin-bottom: 20px;
+		margin-left: auto;
+		margin-right: auto;
+	}
+
 	.highlight {
-		padding: 20px;
+		padding: 60px;
 		font-size: 20px;
+		line-height: 30px;
+	}
+
+	.image-instruction-container {
+		display: flex;
+		align-items: stretch;
+		gap: 20px;
+		max-width: 1000px;
+		margin-left: auto;
+		margin-right: auto;
+		padding: 20px;
+	}
+
+	.image-container {
+		width: 52%;
+		display: flex;
+		align-items: center;
+	}
+
+	.instruction-box {
+		width: 33%;
+		max-width: 400px;
+	}
+
+	.full-recipe {
+		width: 800px;
+	}
+
+	.footer {
+		height: 150px;
 	}
 
 }
