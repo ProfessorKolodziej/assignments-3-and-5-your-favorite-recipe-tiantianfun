@@ -238,11 +238,6 @@ b {
 	.nutrition-serving {
 		font-size: 20px;
 	}
-
-	.footer {
-		height: 100px;
-	}
-
 }
 
 @media (min-width:1024px) {
